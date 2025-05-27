@@ -40,7 +40,7 @@ jobs:
          -Dsonar.junit.reportPath=target/surefire-reports/
          -Dsonar.jacoco.reportPath=target/jacoco.exec
          -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml
-         -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/cintrollerTest/
+         -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/
 
 
     - name: SonarQube quality gate
