@@ -57,10 +57,10 @@ jobs:
         access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         region: ${{ env.AWS_REGION }}
-        repository: ${{ env.ECR_REPOSITORY }}
-        registry: ${{ secrets.ECR_REGISTRY }}
-        image_tag: latest,${{github.run_number}}
-        deamon_off: false
+        repo: ${{ env.ECR_REPOSITORY }}
+        registry: ${{ secrets.REGISTRY }}
+        tags: latest,${{github.run_number}}
+        daemon_off: false
         dockerfile: Dockerfile
         context: ./
 
